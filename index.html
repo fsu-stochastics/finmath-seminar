@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Financial Mathematics Seminar</title>
+<style>
+  :root {
+    --primary: #0f2b46;      /* deep market navy */
+    --accent: #00b386;       /* ticker green */
+    --bg: #ffffff;
+    --text: #1e2a35;
+    --muted: #5c6b7a;
+    --border: #dde3ea;
+    --row-alt: #f4f7fa;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(135deg, #0f2b46 0%, #123a5c 60%, #0e4d5c 100%);
+    color: #fff;
+    padding: 2.2rem 1rem;
+    text-align: center;
+    border-bottom: 3px solid var(--accent);
+  }
+  header h1 { font-size: 1.9rem; font-weight: 600; letter-spacing: 0.02em; }
+  header p { margin-top: 0.4rem; color: #9fc3d9; font-size: 1rem; }
+  nav {
+    background: #f0f2f5;
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+    padding: 0.5rem;
+  }
+  nav a {
+    color: var(--primary);
+    text-decoration: none;
+    margin: 0 1rem;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+  }
+  nav a:hover { text-decoration: underline; }
+  main { max-width: 900px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+  section { margin-top: 2.5rem; }
+  h2 {
+    color: var(--primary);
+    font-size: 1.4rem;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  .info-box {
+    background: var(--row-alt);
+    border-left: 4px solid var(--accent);
+    padding: 0.8rem 1rem;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.6rem 0.8rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th {
+    background: var(--primary);
+    color: #fff;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+  tr:nth-child(even) { background: var(--row-alt); }
+  .speaker { font-weight: bold; }
+  .affil { color: var(--muted); font-size: 0.88rem; }
+  details { margin-top: 0.3rem; }
+  summary {
+    cursor: pointer;
+    color: var(--primary);
+    font-size: 0.88rem;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  details p { margin-top: 0.4rem; font-size: 0.92rem; color: #333; }
+  .past-semester { margin-bottom: 1.2rem; }
+  .past-semester h3 { color: var(--primary); font-size: 1.05rem; margin-bottom: 0.4rem; }
+  .past-semester ul { list-style: none; }
+  .past-semester li { padding: 0.25rem 0; font-size: 0.92rem; }
+  .past-semester .date { color: var(--muted); font-family: Helvetica, Arial, sans-serif; font-size: 0.85rem; margin-right: 0.5rem; }
+  footer {
+    background: #f0f2f5;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 3rem;
+  }
+  a { color: var(--primary); }
+  @media (max-width: 600px) {
+    th, td { padding: 0.4rem; font-size: 0.85rem; }
+    nav a { margin: 0 0.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Financial Mathematics Seminar</h1>
+  <p>Department of Mathematics &middot; Florida State University &middot; Fall 2026</p>
+</header>
+
+<nav>
+  <a href="#schedule">Schedule</a>
+  <a href="#past">Past Talks</a>
+  <a href="#organizers">Organizers</a>
+</nav>
+
+<main>
+
+  <div class="info-box">
+    <strong>When &amp; Where:</strong> Fridays, 3:05&ndash;3:55 pm &middot; Love Building, Room 101<br>
+    Talks are also streamed on Zoom &mdash; <a href="#">join link</a>. All are welcome!
+  </div>
+
+  <section id="schedule">
+    <h2>Upcoming Talks</h2>
+    <table>
+      <tr>
+        <th style="width:110px">Date</th>
+        <th style="width:220px">Speaker</th>
+        <th>Title &amp; Abstract</th>
+      </tr>
+      <tr>
+        <td>Sep 4, 2026</td>
+        <td><span class="speaker">Jane Doe</span><br><span class="affil">University of Somewhere</span></td>
+        <td>
+          Deep Learning Methods for American Option Pricing
+          <details>
+            <summary>Abstract</summary>
+            <p>Replace this text with the abstract. We discuss neural-network approaches to
+            optimal stopping problems arising in the pricing of American-style derivatives...</p>
+          </details>
+        </td>
+      </tr>
+      <tr>
+        <td>Sep 11, 2026</td>
+        <td><span class="speaker">John Smith</span><br><span class="affil">Another University</span></td>
+        <td>
+          Rough Volatility and the SPX&ndash;VIX Joint Calibration Problem
+          <details>
+            <summary>Abstract</summary>
+            <p>Replace this text with the abstract...</p>
+          </details>
+        </td>
+      </tr>
+      <tr>
+        <td>Sep 18, 2026</td>
+        <td><em>TBA</em></td>
+        <td>&mdash;</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="past">
+    <h2>Past Talks</h2>
+    <div class="past-semester">
+      <h3>Spring 2026</h3>
+      <ul>
+        <li><span class="date">Apr 17</span><span class="speaker">Speaker Name</span> (Affiliation) &mdash; <em>Talk Title Here</em></li>
+        <li><span class="date">Mar 27</span><span class="speaker">Speaker Name</span> (Affiliation) &mdash; <em>Talk Title Here</em></li>
+        <li><span class="date">Feb 13</span><span class="speaker">Speaker Name</span> (Affiliation) &mdash; <em>Talk Title Here</em></li>
+      </ul>
+    </div>
+    <div class="past-semester">
+      <h3>Fall 2025</h3>
+      <ul>
+        <li><span class="date">Nov 21</span><span class="speaker">Speaker Name</span> (Affiliation) &mdash; <em>Talk Title Here</em></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="organizers">
+    <h2>Organizers &amp; Contact</h2>
+    <p>
+      The seminar is organized by <strong>Prof. First Last</strong>
+      (<a href="mailto:organizer@fsu.edu">organizer@fsu.edu</a>) and
+      <strong>Prof. First Last</strong>
+      (<a href="mailto:organizer2@fsu.edu">organizer2@fsu.edu</a>).
+    </p>
+    <p style="margin-top:0.6rem">
+      To suggest a speaker or join the mailing list, email the organizers.
+      Directions to campus and parking information are available
+      <a href="#">here</a>.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  Financial Mathematics Seminar &middot; Department of Mathematics, Florida State University<br>
+  Last updated: August 2026
+</footer>
+
+</body>
+</html>
