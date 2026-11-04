@@ -246,10 +246,10 @@ We focus on inhomogeneous PDEs in which the forcing function is observed along s
         <td>Nov 5, 2026</td>
          <td><span class="speaker">Daniel Michael Mazus</span><br><span class="affil">Florida State University</span></td>
         <td>
-          Title TBA
+          Title: Random Time Sampling for Probabilistic Methods in Stochastic Control
           <details>
             <summary>Abstract</summary>
-            <p>TBA</p>
+            <p>Policy-gradient methods for continuous-time stochastic control estimate the cost of a policy by simulating the controlled state on a time grid. The accuracy of this estimate is limited by the time step, and every additional step is paid for again in each gradient evaluation. Walk-on-Shapes methods take a different approach: instead of following the whole path, they sample only where it leaves a sequence of spheres or space-time regions, so that a walk needs only a small random number of steps. This talk reviews time-grid methods for stochastic control and the Walk-on-Spheres and Walk-on-Heat-Balls algorithms, and then presents Walk-on-Cylinders (WoC), which solves the heat equation by sampling exits from space-time cylinders. Fixing the ratio of each cylinder’s height to its squared radius makes all exit laws rescalings of three fixed distributions, which are tabulated once before the walk starts. We discuss the expected number of steps of WoC and compare it with Walk-on-Heat-Balls on the test problems of Deaconu and Herrmann, where WoC reaches the same accuracy with fewer steps. Finally, we show that the cost of a fixed policy solves a linear PDE in which the running cost is a source term, and propose extending WoC to this source by sampling a space-time point inside each cylinder.</p>
           </details>
         </td>
       </tr>
@@ -278,10 +278,10 @@ We focus on inhomogeneous PDEs in which the forcing function is observed along s
         <td>Dec 3, 2026</td>
           <td><span class="speaker">Ye Chen</span><br><span class="affil">Florida State University</span></td>
         <td>
-          Title TBA
+          Title: Short-Horizon Portfolio Management with Diffusion-Based Data Augmentation
           <details>
             <summary>Abstract</summary>
-            <p>TBA</p>
+            <p>Mean–variance portfolio optimization is sensitive to estimation error, particularly at short investment horizons, where noisy return estimates can generate unstable allocations and excessive trading. This study investigates diffusion-based data augmentation as a means of regularizing portfolio decisions. Under Gaussian returns, we characterize expected utility through the generator’s conditional moments and show that naive resampling recovers the classical plug-in portfolio in the infinite-sample limit. Appropriately tuned diffusion, with squared signal-decay factor proportional to the inverse sample size, can instead yield a positive second-order improvement in expected utility under the theoretical assumptions. For implementation, we exploit the affine Gaussian score to propagate the reverse Euler scheme’s mean and covariance deterministically, eliminating synthetic-sampling noise. We combine these moments with nested chronological validation of the diffusion horizon, constrained portfolio optimization, turnover penalties, and partial rebalancing. Development backtests on five large-cap U.S. equities compare the resulting strategies with equal-weight, classical mean–variance, and Ledoit–Wolf benchmarks across weekly to quarterly holding periods. Results favor diffusion at weekly and biweekly horizons, while covariance shrinkage performs better at longer horizons. Turnover control substantially reduces trading and improves net performance in the reported experiments. These findings support further evaluation of diffusion-based moment regularization combined with trading controls; confirmation on a locked holdout remains necessary.</p>
           </details>
         </td>
       </tr>
